@@ -1,0 +1,154 @@
+html,
+body {
+    width: 100%;
+    height: 100%;
+    font-family: 'Monterrat', sans-serif;
+    color: #616971;
+}
+
+.navbar-brand img {
+    height: 3rem;
+}
+
+.navbar {
+    font-size: 1.15rem;
+    font-weight: 600;
+    letter-spacing: .1rem;
+    box-shadow: 0 .5rem .5em rgba(0, 0, 0, .3);
+}
+
+.nav-item {
+    padding: .3rem;
+}
+
+.nav-link {
+    color: #5b5555 !important;
+}
+
+.nav-link.active,
+.nav-link:hover {
+    color: #4981b3 !important;
+}
+
+#carouselExampleControls {
+    box-shadow: 0 .2rem .2rem rgba(0, 0, 0, .3);
+}
+
+.carousel-inner {
+    max-height: 38rem !important;
+}
+
+.carousel-item img {
+    width: 100%;
+}
+
+.carousel-control-next,
+.carousel-control-prev,
+.carousel-item,
+active {
+    transition: transform 1.2s ease;
+}
+
+.carousel-caption {
+    position: absolute;
+    top: 54%;
+    transform: translateY(-50%);
+    text-transform: uppercase;
+}
+
+.bg-custom {
+    background-color: rgba(0, 0, 0, .4);
+    color: white;
+    border-radius: 1rem;
+}
+
+.carousel-caption h1 {
+    font-size: 3.8rem;
+    text-shadow: .1rem 1rem .3rem rgba(0, 0, 0, .3);
+}
+
+.border-primary {
+    border-top: .2rem solid #4981b3 !important;
+}
+
+.carousel-caption h3 {
+    font-size: 2.2rem;
+    text-shadow: .1rem 1rem .2rem rgba(0, 0, 0, .3);
+}
+
+.btn-lg {
+    border-radius: 0;
+    text-transform: uppercase;
+    font-size: 1rem;
+    border-width: medium;
+}
+
+.btn-danger {
+    background-color: #AC2615;
+    border: .05rem solid #AC2615;
+}
+
+.btn-primary {
+    background-color: #4981b3;
+    border: .05rem solid #4981b3;
+}
+
+.btn-primary :hover,
+.btn-primary :focus {
+    background-color: #68a0d2 !important;
+    border: .05rem solid #68a0d2 !important;
+}
+
+.trigger-search {
+    background: #45919e;
+    border: 0;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    outline: 0;
+    cursor: pointer;
+}
+
+.input {
+    border-radius: 20px;
+    border: 0;
+    outline: 0;
+    transition: 0.25s ease-in-out all;
+    width: 0;
+    padding: 0;
+    margin-right: 25px;
+    height: 48px;
+}
+
+.input-open {
+    width: 70vh;
+    padding: 0 50px;
+    margin-right: 10px;
+}
+
+footer {
+    background-color: #1b1d26;
+    padding: 1rem 2rem 3rem;
+}
+
+ul.social {
+    list-style-type: none;
+    display: flex;
+    max-width: 20rem;
+    margin: 0 auto;
+}
+
+ul.social li {
+    margin: 0 auto;
+}
+
+.socket {
+    background-color: #363948;
+}
+
+.socket a {
+    color: aliceblue;
+}
