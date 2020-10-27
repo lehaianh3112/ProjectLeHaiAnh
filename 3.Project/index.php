@@ -1,3 +1,6 @@
+<?php  include('config/includes/header.php');
+
+?>
 <!doctype html>
 <html lang="en">
 
@@ -14,9 +17,8 @@
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="https://kit.fontawesome.com/81c2c05f29.js">
 </head>
-
 <body>
-   <?php  include("config/includes/header.php");?>
+
     <div id="carouselExampleControls" class="carousel slide" data-ride="carousel" data-interval="650000">
         <div class="carousel-inner">
             <div class="carousel-item active">
@@ -28,7 +30,7 @@
                                 <h1>Đại Học Thủy Lợi</h1>
                                 <div class="border-top border-primary w-50 mx-auto my-3"></div>
                                 <h3 class="pb-3">Khoa công nghệ thông tin</h3>
-                                <a href="" class="btn btn-danger btn-lg mr-2">Bài viết
+                                <a href="single.php" class="btn btn-danger btn-lg mr-2">Bài viết
                                 </a>
                                 <a href="" class="btn btn-primary btn-lg ml-2">Liên Hệ
                                 </a>
@@ -44,7 +46,7 @@
                         <div class="row justify-content-end text-right">
                             <div class="col-5 bg-custom d-none d-md-block py-3 px-0 pr-3">
                                 <p class="lead pd-3">Hợp tác quốc tế xứng vai các cường quốc.</p>
-                                <a href="" class="btn btn-danger btn-lg">Bài viết
+                                <a href="single.php" class="btn btn-danger btn-lg">Bài viết
                             </a>
                             </div>
                         </div>
@@ -60,7 +62,7 @@
                                 <h3 class="pb-3">Khoa công nghệ thông tin</h3>
                                 <div class="border-top border-warning w-50 mx-auto my-3"></div>
                                 <p class="lead">Đào tạo chuyên môn cao</p>
-                                <a href="" class="btn btn-primary btn-lg ml-2">Bài viết
+                                <a href="single.php" class="btn btn-primary btn-lg ml-2">Bài viết
                                 </a>
                             </div>
                         </div>

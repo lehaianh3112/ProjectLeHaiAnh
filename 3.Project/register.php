@@ -1,4 +1,32 @@
-<?php require_once('config/controller/sigController.php'); ?>
+<?php  include('config/data/connect.php');
+ $err=[];
+if (isset($_POST['username'])) {
+    $username=$_POST['username'];
+    $email=$_POST['email'];
+    $password=$_POST['password'];
+    $passwordConf=$_POST['passwordConf'];
+    if (empty($username)) { 
+        $err['username']="Bạn chưa nhập tên";
+    }
+    if (empty($email)) {
+        $err['email']="Bạn chưa nhập email";
+    }
+    if (empty($password)) {
+        $err['password']="Bạn chưa nhập mật khẩu ";
+    }
+    if ($password !== $passwordConf) {
+        $err['passwordConf']="Hai mật khẩu không khớp";
+    }
+   if (empty($err)) {
+       $pass=password_hash($password,PASSWORD_DEFAULT);
+    $sql="INSERT INTO user(username,email,password) VALUES ('$username','$email','$pass')";
+    $query=mysqli_query($conn,$sql);
+    if ($query) {
+        header("location:login.php");
+    }
+   }
+}
+ ?>
 <!doctype html>
 <html lang="en">
 <head>
@@ -39,7 +67,6 @@ img {
     </style>
 </head>
 <body>
-<?php  include("config/includes/header.php");?>
     <section class="Form my-4 mx-5">
         <div class="container">
             <div class="row no-gutters  ">
@@ -49,27 +76,31 @@ img {
                 <div class="col-lg-7 px-5 pt-5">
                     <a href="index.php" class="py-3"><img src="./assets/images/logo.jpg" style="height: 3rem;" alt=""></a>
                    
-                   <form action="register.php" method="POST">
+                   <form action="" method="POST">
                        <h4>Register Account</h4>  
-                       <?php
-                       if (count($errors)>0):?>     
-                   <div class="alert alert-danger">
-                       <?php foreach($errors as $errors): ?>
-                       <li><?php echo $errors;?></li>
-                       <?php endforeach; ?>
-                   </div> 
-                       <?php endif;  ?>
                     <div class="form-row col-lg-7">
-                            <input type="text" placeholder="Username"name="username" value="<?php echo $username; ?>"  class="form-control my-3 p-3">
+                            <input type="text" placeholder="Username"name="username"  class="form-control my-3 p-3">
+                            <div class="error " style="color: red;">
+                                <span ><?php echo(isset($err['username']))?$err['username']:'' ?></span>
+                            </div>
                     </div>
                     <div class="form-row col-lg-7">
-                            <input type="email" name="email"  placeholder="Email Address"  value="<?php echo $email; ?>"class="form-control  my-3 p-3">
+                            <input type="email" name="email"  placeholder="Email Address" class="form-control  my-3 p-3">
+                            <div class="error " style="color: red;">
+                                <span ><?php echo(isset($err['email']))?$err['email']:'' ?></span>
+                            </div>
                     </div>
                     <div class="form-row col-lg-7">
                             <input type="password"  name="password"  placeholder="Password" class="form-control  my-3 p-3">
+                            <div class="error " style="color: red;">
+                                <span ><?php echo(isset($err['password']))?$err['password']:'' ?></span>
+                            </div>
                     </div>
                     <div class="form-row col-lg-7">
                             <input type="password" name="passwordConf"  placeholder="Password confirm" class="form-control  my-3 p-3">
+                            <div class="error " style="color: red;">
+                                <span ><?php echo(isset($err['passwordConf']))?$err['passwordConf']:'' ?></span>
+                            </div>
                     </div>
                     <div class="form-row col-lg-7">            
                             <input type="submit"  name="register-in" value="Sign up" class="btn btn-primary mt-2 mb-4 ">      
