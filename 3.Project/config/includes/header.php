@@ -17,7 +17,7 @@ $user=(isset($_SESSION['user']))? $_SESSION['user']: [];
                         <a class="nav-link" href="#">Giới thiệu</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Diễn đàn</a>
+                        <a class="nav-link" href="forum.php">Diễn đàn</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#">

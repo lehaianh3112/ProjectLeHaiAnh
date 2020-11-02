@@ -152,3 +152,15 @@ ul.social li {
 .socket a {
     color: aliceblue;
 }
+
+.question {
+    background-color: #45B8FF;
+}
+
+.forum-col {
+    min-width: 256px;
+}
+
+.induce {
+    border: #68a0d2;
+}
