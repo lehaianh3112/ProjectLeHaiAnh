@@ -87,21 +87,21 @@
     <div class="container">
         <div class="row my-5">
             <div class="col-md-4 my-4">
-                <img src="images/11.jpg" alt="" class="w-100">
+                <img src="images/tapthe.jpg" alt="" class="w-100">
                 <h4 class="my-4">"Khoa CNTT, ĐH Thủy lợi gây choáng váng với hồ sơ kỷ lục"</h4>
                 <p> Khoa CNTT đã xây dựng và triển khai tốt công tác quảng bá, marketing,PR với các video giới thiệu chi tiết, chuyên nghiệp về các ngành học, đội ngũ giảng viên, môi trường học tập của Khoa.TS Nguyễn Thanh Tùng - Trưởng khoa CNTT, ĐH Thủy lợi cho hay, khoa xác định hai khâu then chốt là: đầu tư cơ sở vật chất và nâng cao chất lượng giảng dạy.</p>
                 <a href="single.php" class="btn btn-outline-dark btn-md">Đọc bài</a>
             </div>
             <div class="col-md-4 my-4">
-                <img src="images/ht.jpg" alt="" class="w-100">
-                <h4 class="my-4">"Sai lầm sinh viên năm nhất"</h4>
-                <p>Thủ tục nhập học tân sinh viên cần chuyển bị những gì để có thể học tốt trong trường và ra ngoài hoàn thành tốt công việc</p>
+                <img src="images/k62.jpg" alt="" class="w-100">
+                <h4 class="my-4">"Tân sinh viên K62 với tuần sinh hoạt công dân - sinh viên đầu khóa học"</h4>
+                <p>Lịch học tuần đầu khóa của sinh viên K62 sẽ kéo dài từ nay cho đến 1/11/2020. Đây là hoạt động chính trị vô cùng ý nghĩa, được tổ chức thường niên trước khi sinh viên bước vào năm học mới.</p>
                 <a href="single.php" class="btn btn-outline-dark btn-md">Đọc bài</a>
             </div>
             <div class="col-md-4 my-4">
-                <img src="images/14.jpg" alt="" class="w-100">
+                <img src="images/khcn.jpg" alt="" class="w-100">
                 <h4 class="my-4">"Nghiên cứu khoa học"</h4>
-                <p>Thủ tục nhập học tân sinh viên cần chuyển bị những gì để có thể học tốt trong trường và ra ngoài hoàn thành tốt công việc</p>
+                <p> hội trường 225-A2-Trường Đại học Thủy lợi diễn ra Hội thảo Quốc tế lần thứ 4 về công nghệ tiên tiến trong xử lý Tín hiệu, Viễn thông và Điện toán (The 4th International conference on Recent advanced in Signal processing, Telecommucations and Computing- SigTelCom2020)..</p>
                 <a href="single.php" class="btn btn-outline-dark btn-md">Đọc bài</a>
             </div>
         </div>
@@ -109,22 +109,23 @@
     <div class="container">
         <div class="row my-5">
             <div class="col-md-4 my-4">
-                <img src="images/11.jpg" alt="" class="w-100">
-                <h4 class="my-4">"Sinh viên năm nhất"</h4>
-                <p>Thủ tục nhập học tân sinh viên cần chuyển bị những gì để có thể học tốt trong trường và ra ngoài hoàn thành tốt công việc</p>
+                <img src="images/hoptac.jpg" alt="" class="w-100">
+                <h4 class="my-4">"Hợp tác quốc tế"</h4>
+                <p>“Dự án Bảo tồn Đất và Nước tại các lưu vực ở Đông Nam Á” (Chính phủ Nhật Bản, 2012-2015)" 
+“Dự án nghiên cứu Việt Nam - New Zealand về an toàn đập” (Chính phủ New Zealand, 2016-2021)"</p>
                 <a href="single.php" class="btn btn-outline-dark btn-md">Đọc bài</a>
             </div>
             <div class="col-md-4 my-4">
-                <img src="images/ht.jpg" alt="" class="w-100">
-                <h4 class="my-4">"Sai lầm sinh viên năm nhất"</h4>
-                <p>Thủ tục nhập học tân sinh viên cần chuyển bị những gì để có thể học tốt trong trường và ra ngoài hoàn thành tốt công việc</p>
+                <img src="images/e.jpg" alt="" class="w-100">
+                <h4 class="my-4">"Internet kết nối vạn vật và mạng truyền thông 5G"</h4>
+                <p>Internet kết nối vạn vật và mạng truyền thông 5G giảm thiểu thảm họa thiên nhiên và suy thoái môi trường</p>
                 <a href="single.php" class="btn btn-outline-dark btn-md">Đọc bài</a>
             </div>
             <div class="col-md-4 my-4">
-                <img src="images/14.jpg" alt="" class="w-100">
-                <h4 class="my-4">"Nghiên cứu khoa học"</h4>
-                <p>Thủ tục nhập học tân sinh viên cần chuyển bị những gì để có thể học tốt trong trường và ra ngoài hoàn thành tốt công việc</p>
-                <a href="single.php" class="btn btn-outline-dark btn-md">Đọc bài</a>
+                <img src="images/tttttttt.jpg" alt="" class="w-100">
+                <h4 class="my-4">"10 xu hướng công nghệ hàng đầu của cuộc cách mạng công nghiệp 4.0"</h4>
+                <p>Dưới đây là 10 xu hướng công nghệ hàng đầu đang thúc đẩy cuộc cách mạng công nghiệp 4.0.</p>
+                <a href="https://vietnamnet.vn/vn/cong-nghe/10-xu-huong-cong-nghe-hang-dau-cua-cuoc-cach-mang-cong-nghiep-4-0-638765.html" class="btn btn-outline-dark btn-md">Đọc bài</a>
             </div>
         </div>
     </div>
