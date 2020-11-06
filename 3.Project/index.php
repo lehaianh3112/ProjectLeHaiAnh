@@ -1,6 +1,4 @@
-<?php  include('config/includes/header.php');
 
-?>
 <!doctype html>
 <html lang="en">
 
@@ -14,15 +12,17 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.7.2/css/all.min.css" />
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:300,400,500,600,700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="assets/css/style.css">
-    <link rel="stylesheet" href="https://kit.fontawesome.com/81c2c05f29.js">
+    <link rel="stylesheet" href="https://kit.fontawesome.com/81c2c05f29.js"> 
+     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+<?php  include('includes/header.php');
 
+?>
     <div id="carouselExampleControls" class="carousel slide" data-ride="carousel" data-interval="650000">
         <div class="carousel-inner">
             <div class="carousel-item active">
-                <img class="w-100" src="assets/images/bg.jpg" alt="First slide">
+                <img class="w-100" src="images/bg.jpg" alt="First slide">
                 <div class="carousel-caption">
                     <div class="container">
                         <div class="row justify-content-center">
@@ -40,7 +40,7 @@
                 </div>
             </div>
             <div class="carousel-item">
-                <img class=" w-100" src="assets/images/bf.jpg" alt="Second slide">
+                <img class=" w-100" src="images/bf.jpg" alt="Second slide">
                 <div class="carousel-caption">
                     <div class="container">
                         <div class="row justify-content-end text-right">
@@ -54,7 +54,7 @@
                 </div>
             </div>
             <div class="carousel-item">
-                <img class="w-100" src="assets/images/9.jpg" alt="Third slide">
+                <img class="w-100" src="images/9.jpg" alt="Third slide">
                 <div class="carousel-caption">
                     <div class="container">
                         <div class="row justify-content-center">
@@ -83,24 +83,23 @@
     <div class="col-12 text-center mt-5">
         <h1 class="text-dark pt-4">Khoa Công Nghệ Thông Tin </h1>
         <div class="border-top border-primary w-25 mx-auto my-3"></div>
-        <p class="laed">Tất cả bài viết khoa công nghệ thông tin</p>
     </div>
     <div class="container">
         <div class="row my-5">
             <div class="col-md-4 my-4">
-                <img src="assets/images/11.jpg" alt="" class="w-100">
-                <h4 class="my-4">"Sinh viên năm nhất"</h4>
-                <p>Thủ tục nhập học tân sinh viên cần chuyển bị những gì để có thể học tốt trong trường và ra ngoài hoàn thành tốt công việc</p>
+                <img src="images/11.jpg" alt="" class="w-100">
+                <h4 class="my-4">"Khoa CNTT, ĐH Thủy lợi gây choáng váng với hồ sơ kỷ lục"</h4>
+                <p> Khoa CNTT đã xây dựng và triển khai tốt công tác quảng bá, marketing,PR với các video giới thiệu chi tiết, chuyên nghiệp về các ngành học, đội ngũ giảng viên, môi trường học tập của Khoa.TS Nguyễn Thanh Tùng - Trưởng khoa CNTT, ĐH Thủy lợi cho hay, khoa xác định hai khâu then chốt là: đầu tư cơ sở vật chất và nâng cao chất lượng giảng dạy.</p>
                 <a href="single.php" class="btn btn-outline-dark btn-md">Đọc bài</a>
             </div>
             <div class="col-md-4 my-4">
-                <img src="assets/images/ht.jpg" alt="" class="w-100">
+                <img src="images/ht.jpg" alt="" class="w-100">
                 <h4 class="my-4">"Sai lầm sinh viên năm nhất"</h4>
                 <p>Thủ tục nhập học tân sinh viên cần chuyển bị những gì để có thể học tốt trong trường và ra ngoài hoàn thành tốt công việc</p>
                 <a href="single.php" class="btn btn-outline-dark btn-md">Đọc bài</a>
             </div>
             <div class="col-md-4 my-4">
-                <img src="assets/images/14.jpg" alt="" class="w-100">
+                <img src="images/14.jpg" alt="" class="w-100">
                 <h4 class="my-4">"Nghiên cứu khoa học"</h4>
                 <p>Thủ tục nhập học tân sinh viên cần chuyển bị những gì để có thể học tốt trong trường và ra ngoài hoàn thành tốt công việc</p>
                 <a href="single.php" class="btn btn-outline-dark btn-md">Đọc bài</a>
@@ -110,19 +109,19 @@
     <div class="container">
         <div class="row my-5">
             <div class="col-md-4 my-4">
-                <img src="assets/images/11.jpg" alt="" class="w-100">
+                <img src="images/11.jpg" alt="" class="w-100">
                 <h4 class="my-4">"Sinh viên năm nhất"</h4>
                 <p>Thủ tục nhập học tân sinh viên cần chuyển bị những gì để có thể học tốt trong trường và ra ngoài hoàn thành tốt công việc</p>
                 <a href="single.php" class="btn btn-outline-dark btn-md">Đọc bài</a>
             </div>
             <div class="col-md-4 my-4">
-                <img src="assets/images/ht.jpg" alt="" class="w-100">
+                <img src="images/ht.jpg" alt="" class="w-100">
                 <h4 class="my-4">"Sai lầm sinh viên năm nhất"</h4>
                 <p>Thủ tục nhập học tân sinh viên cần chuyển bị những gì để có thể học tốt trong trường và ra ngoài hoàn thành tốt công việc</p>
                 <a href="single.php" class="btn btn-outline-dark btn-md">Đọc bài</a>
             </div>
             <div class="col-md-4 my-4">
-                <img src="assets/images/14.jpg" alt="" class="w-100">
+                <img src="images/14.jpg" alt="" class="w-100">
                 <h4 class="my-4">"Nghiên cứu khoa học"</h4>
                 <p>Thủ tục nhập học tân sinh viên cần chuyển bị những gì để có thể học tốt trong trường và ra ngoài hoàn thành tốt công việc</p>
                 <a href="single.php" class="btn btn-outline-dark btn-md">Đọc bài</a>

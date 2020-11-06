@@ -1,5 +1,26 @@
 <?php  include('includes/header.php');
-include("server.php");
+
+if (isset($_GET['edit'])) {
+    $id=$_GET['edit'];
+    $rec=mysqli_query($conn,"SELECT*FROM cauhoi WHERE id=$id");
+    $records=mysqli_fetch_assoc($rec);
+    $title=$records['title'];
+    $question=$records['question'];
+    $id=$records['id'];
+
+    if (isset($_POST['btn_update'])) {
+        $title=$_POST['title'];
+        $question=$_POST['question'];
+        $sql="UPDATE cauhoi SET title='$title',question='$question' WHERE id=$id";
+      $query=mysqli_query($conn,$sql);
+      if ($query) {
+          header('location:forum.php');
+      }else {
+          echo'lỗi';
+      }
+    }
+
+}
 ?>
 <!doctype html>
 <html lang="en">
@@ -13,49 +34,30 @@ include("server.php");
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:300,400,500,600,700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://kit.fontawesome.com/81c2c05f29.js">
-   
 </head>
 <body>
 <div id="fb-root"></div>
     <script async defer crossorigin="anonymous" src="https://connect.facebook.net/vi_VN/sdk.js#xfbml=1&version=v8.0" nonce="EEfaaYbW"></script>
     <div class="container my-3">
      <div class="row">
-         <div class="col-md-8 mx-auto">
-       <h2 class="h4 category mb-0 p-4 rounded-top text-light">Hãy đặt câu hỏi
-             <button name="add" id="add"  class="btn btn-success " data-toggle="modal" data-target="#add_question" style="float: right;"><i class="fas fa-plus"></i> Add question</button></h2>
-                 <table class="table">
-                <thead class="bg-primary text-white">
-                    <tr>
-                    <th scope="col">Title</th>
-                    <th scope="col">Question</th>
-                    <th scope="col">Action</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <?php while ($row=mysqli_fetch_array($results)) { ?>
-                         <tr>
-                    <td><?php echo $row['title']?></td>
-                    <td><?php echo $row['question']?>&nbsp; 
-                     <div class="voting">
-                        <button id="likebtn"><i class="fa fa-thumbs-up"></i></button> 
-                        <input  type="number" id="input1" value="0" name="">
-                        <button id="dislikebtn"><i class="fa fa-thumbs-down"></i></button> 
-                        <input type="number" id="input2" value="0" name="">
+     <div class="col-md-8 mx-auto">
+         <h2 class="modal-title">Sửa bài viết</h2>    <br>
+               
+ <form action="" method="post">
+              <input type="hidden" name="id" value="<?php echo $id; ?>">
+                 <div class="form-group">
+                     <label for="">Tiêu đề</label>
+                     <input type="text " name="title" id="title" name="title" class="form-control"  placeholder="<?php echo $records['title']; ?>">
+                 </div>
+                 <div class="form-group">
+                     <label for="">Câu hỏi</label>
+                     <textarea name="question" id="question" class="form-control"  rows="3"  placeholder="<?php echo $records['question']; ?>"></textarea>
+                 </div>
+                 <div class="form-group">
+                        <button type="submit" id="btn_update" name="btn_update" class="btn btn-outline-primary">Update</button>
                     </div>
-                </td>
-                    <td>
-                        <a   href="edit.php?edit=<?php echo $row['id'];?>" class="text-success"><i class="fas fa-edit"></i></a>&nbsp;
-                    <a href="xem.php?xem=<?php echo$row['id'];?>" class="text-dark"><i class="far fa-eye"></i></a>&nbsp;
-                    <a  href="forum.php?del=<?php echo$row['id'];?>" class="text-danger mr-2" onclick="return confirm('Bạn có muốn xóa bình luận này?');" title="Delete"><i class="fas fa-trash"></i></a>
-                       </td>
-                    </tr>
-                  <?php  } ?>
-                   
-                </tbody>
-                </table>
-         </div>
-         <br><br><br><br>
-       
+                 </form> 
+     </div>
          <div class="col-12 col-xl-3">
              <aside>
                  <div class="row">
@@ -83,35 +85,9 @@ include("server.php");
      </div>
     </div>
 
-    <div id="add_question" class="modal fade">  
-      <div class="modal-dialog">  
-           <div class="modal-content">  
-                <div class="modal-header">  
-                <h4 class="modal-title">Hãy điền câu hỏi của bạn</h4>  
-                     <button type="button" class="close" data-dismiss="modal">&times;</button>  
-                </div>  
-                <div class="modal-body"> 
- <form action="server.php" method="post">
-                 <div class="form-group">
-                     <label for="">Tiêu đề</label>
-                     <input type="text " name="title" id="title" name="title" class="form-control" >
-                 </div>
-                 <div class="form-group">
-                     <label for="">Câu hỏi</label>
-                     <textarea name="question" id="question" class="form-control"  rows="3" ></textarea>
-                 </div>
-                 <div class="form-group">
-                        <button type="submit" id="btn_post" name="btn_post" class="btn btn-outline-primary">Post</button>
-                    </div>
-                 </form> 
-                 </div>
-                 <div class="modal-footer">  
-                     <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>  
-                </div>  
-           </div>  
-      </div>  
- </div>  
-
+   
+          
+ 
 
      <br><br><br><br><?php include('includes/footer.php')?>
     <div class="container my-5"></div>
@@ -119,8 +95,6 @@ include("server.php");
     <script src="https://code.jquery.com/jquery-3.5.1.min.js"integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0="crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-    <script src="js/like.js"></script>
 
-   
 </body>
 </html> 

@@ -18,7 +18,7 @@ body {
 }
 
 .nav-item {
-    padding: .3rem;
+    padding: .5rem;
 }
 
 .nav-link {
@@ -99,36 +99,6 @@ active {
     border: .05rem solid #68a0d2 !important;
 }
 
-.trigger-search {
-    background: #45919e;
-    border: 0;
-    border-radius: 50%;
-    width: 40px;
-    height: 40px;
-    justify-content: center;
-    align-items: center;
-    color: white;
-    outline: 0;
-    cursor: pointer;
-}
-
-.input {
-    border-radius: 20px;
-    border: 0;
-    outline: 0;
-    transition: 0.25s ease-in-out all;
-    width: 0;
-    padding: 0;
-    margin-right: 25px;
-    height: 48px;
-}
-
-.input-open {
-    width: 70vh;
-    padding: 0 50px;
-    margin-right: 10px;
-}
-
 footer {
     background-color: #1b1d26;
     padding: 1rem 2rem 3rem;
@@ -163,4 +133,43 @@ ul.social li {
 
 .induce {
     border: #68a0d2;
+}
+
+.category {
+    background-color: #45B8FF;
+}
+
+.voting {
+    position: relative;
+    /* border: 3px solid #edeaea; */
+    border-radius: 4px;
+    padding: 5px;
+    display: flex;
+    justify-content: left;
+}
+
+.voting input {
+    width: 50px;
+    border: none;
+    background: none;
+    color: #a59090;
+    border: none;
+    font-size: 20px;
+    margin: 0 10px;
+    pointer-events: none;
+}
+
+.voting button {
+    color: rgb(209, 95, 95);
+    border: none;
+    font-size: 20px;
+    padding: 3 15px;
+    margin: 10px 0;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+.voting button:active {
+    color: #4981b3;
+    transform: scale(1.2);
 }

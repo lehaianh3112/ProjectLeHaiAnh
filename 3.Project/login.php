@@ -1,4 +1,15 @@
-<?php include('config/data/connect.php');
+<?php $host ='localhost';
+$user='root';
+$pass='';
+$db_name='project';
+$port='3306';
+
+$conn=new mysqli($host,$user,$pass,$db_name,$port);
+if(!$conn)
+{
+    die('CSDL khong ket noi : ');
+}
+ session_start();
  if (isset($_POST['email'])) {
     $email=$_POST['email'];
     $password=$_POST['password'];
@@ -32,7 +43,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.7.2/css/all.min.css" />
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:300,400,500,600,700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://kit.fontawesome.com/81c2c05f29.js">
-    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="css/style.css">
     <style>
         * {
     padding: 0;
@@ -64,7 +75,7 @@ img {
         <div class="container">
             <div class="row no-gutters  ">
                 <div class="col-lg-5">
-                    <img src="./assets/images/1.jpg" class="img-fluid" alt="">
+                    <img src="images/1.jpg" class="img-fluid" alt="">
                 </div>
                 <div class="col-lg-7 px-5 pt-5">
                     <a href="index.php" class="py-3"><img src="./assets/images/logo.jpg" style="height: 3rem;" alt=""></a>
@@ -73,7 +84,7 @@ img {
                     <div class="form-row col-lg-7">    
                     <input type="email" name="email"  placeholder="Email Address" class="form-control  my-3 p-3">
                             <div class="error " style="color: red;">
-                                <span ><?php echo(isset($err['username']))?$err['username']:'' ?></span>
+                                <span ><?php echo(isset($err['email']))?$err['email']:'' ?></span>
                             </div>
                     </div>
                     <div class="form-row col-lg-7">

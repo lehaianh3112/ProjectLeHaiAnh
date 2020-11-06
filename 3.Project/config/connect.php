@@ -10,5 +10,5 @@ if(!$conn)
 {
     die('CSDL khong ket noi : ');
 }
-session_start();
+ //session_start();
 ?>
