@@ -19,7 +19,7 @@ $user=(isset($_SESSION['user']))? $_SESSION['user']: [];
             <a href="index.php" class="navbar-brand"><img src="images/logo.jpg" alt="logoCSE" title="logoCSE"></a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
           <span class="navbar-toggler-icon"></span>
-    </button>
+          </button>
             <div class="collapse navbar-collapse" id="navbarResponsive">
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item">
@@ -58,6 +58,7 @@ $user=(isset($_SESSION['user']))? $_SESSION['user']: [];
                         </div>
                     </li>
 <?php } ?>
+
                 </ul>
       
             </div>

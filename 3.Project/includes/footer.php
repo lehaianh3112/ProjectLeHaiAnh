@@ -12,32 +12,32 @@
                     <h6 class="text-uppercase font-weight-bold" style="color: white;">Đào tạo</h6>
                     <hr class="teal accent-3 mb-4 mt-0 d-inline-block mx-auto bg-danger" style="width: 73px;">
                     <p>
-                        <a class="dark-grey-text" style="color: white;" href="#!">Mô hình đào tạo</a>
+                        <a class="dark-grey-text" style="color: white;" href="mohinh.php">Mô hình đào tạo</a>
                     </p>
                     <p>
-                        <a class="dark-grey-text" style="color: white;" href="#!">Đào tạo đại học</a>
+                        <a class="dark-grey-text" style="color: white;" href="daotao.php">Đào tạo đại học</a>
                     </p>
                     <p>
-                        <a class="dark-grey-text" style="color: white;" href="#!">Đào tạo sau đại học</a>
+                        <a class="dark-grey-text" style="color: white;" href="daotaosau.php">Đào tạo sau đại học</a>
                     </p>
                     <p>
-                        <a class="dark-grey-text" style="color: white;" href="#!">Định hướng nghành nghề</a>
+                        <a class="dark-grey-text" style="color: white;" href="dinhhuong.php">Định hướng nghành nghề</a>
                     </p>
                 </div>
                 <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
                     <h6 class="text-uppercase font-weight-bold" style="color: white;">Chuyên nghành</h6>
                     <hr class="teal accent-3 mb-4 mt-0 d-inline-block mx-auto bg-danger" style="width: 150px;">
                     <p>
-                        <a class="dark-grey-text" href="#!" style="color: white;">Công nghệ phần mềm</a>
+                        <a class="dark-grey-text" href="congnghepm.php" style="color: white;">Công nghệ phần mềm</a>
                     </p>
                     <p>
-                        <a class="dark-grey-text" href="#!" style="color: white;">Hệ thống thông tin</a>
+                        <a class="dark-grey-text" href="ht.php" style="color: white;">Hệ thống thông tin</a>
                     </p>
                     <p>
-                        <a class="dark-grey-text" href="#!" style="color: white;">Khoa học máy tính</a>
+                        <a class="dark-grey-text" href="khoahoc.php" style="color: white;">Khoa học máy tính</a>
                     </p>
                     <p>
-                        <a class="dark-grey-text" href="#!" style="color: white;">Toán học</a>
+                        <a class="dark-grey-text" href="toanhoc.php" style="color: white;">Toán học</a>
                     </p>
                 </div>
                 <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">

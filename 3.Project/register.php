@@ -41,7 +41,7 @@ if (isset($_POST['username'])) {
 <!doctype html>
 <html lang="en">
 <head>
-    <title>Register</title>
+    <title>Đăng ký</title>
 
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -89,37 +89,37 @@ img {
                    
                    <form action="" method="POST">
                    <br>
-                       <h4>Register Account</h4>  
+                       <h4>Đăng ký tài khoản</h4>  
                     <div class="form-row col-lg-7">
-                            <input type="text" placeholder="Username"name="username"  class="form-control my-3 p-3">
+                            <input type="text" placeholder="Tên đăng nhập"name="username"  class="form-control my-3 p-3">
                             <div class="error " style="color: red;">
                                 <span ><?php echo(isset($err['username']))?$err['username']:'' ?></span>
                             </div>
                     </div>
                     <div class="form-row col-lg-7">
-                            <input type="email" name="email"  placeholder="Email Address" class="form-control  my-3 p-3">
+                            <input type="email" name="email"  placeholder="Địa chỉ email" class="form-control  my-3 p-3">
                             <div class="error " style="color: red;">
                                 <span ><?php echo(isset($err['email']))?$err['email']:'' ?></span>
                             </div>
                     </div>
                     <div class="form-row col-lg-7">
-                            <input type="password"  name="password"  placeholder="Password" class="form-control  my-3 p-3">
+                            <input type="password"  name="password"  placeholder="Mật khẩu" class="form-control  my-3 p-3">
                             <div class="error " style="color: red;">
                                 <span ><?php echo(isset($err['password']))?$err['password']:'' ?></span>
                             </div>
                     </div>
                     <div class="form-row col-lg-7">
-                            <input type="password" name="passwordConf"  placeholder="Password confirm" class="form-control  my-3 p-3">
+                            <input type="password" name="passwordConf"  placeholder="Xác minh mật khẩu" class="form-control  my-3 p-3">
                             <div class="error " style="color: red;">
                                 <span ><?php echo(isset($err['passwordConf']))?$err['passwordConf']:'' ?></span>
                             </div>
                     </div>
                     <div class="form-row col-lg-7">            
-                            <input type="submit"  name="register-in" value="Sign up" class="btn btn-primary mt-2 mb-4 ">      
+                            <input type="submit"  name="register-in" value="Đăng ký" class="btn btn-primary mt-2 mb-4 ">      
                     </div>
                     </form>
-                    <p class="col-lg-7 ">Or<a href="login.php">Sign In</a></p>
-                    <p><a class="col-md-6" href="index.php">Back home page</a></p>
+                    <p class="col-lg-7 ">Or<a href="login.php">Đăng nhập</a></p>
+                    <p><a class="col-md-6" href="index.php">Trở về trang trủ</a></p>
                 </div>
             </div>
         </div>

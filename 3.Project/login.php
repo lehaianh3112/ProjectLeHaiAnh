@@ -10,6 +10,7 @@ if(!$conn)
     die('CSDL khong ket noi : ');
 }
  session_start();
+ $err=[];
  if (isset($_POST['email'])) {
     $email=$_POST['email'];
     $password=$_POST['password'];
@@ -24,10 +25,12 @@ if(!$conn)
             $_SESSION['user']=$data;
             header("location:index.php");
         }else {
-            echo"Sai mật khẩu";
+            $err['password']="Mật khẩu không đúng ";
+            // echo"Sai mật khẩu";
         }
     }else {
-        echo"Email không tồn tại";
+        $err['email']="Email không tồn tại";
+        // echo"Email không tồn tại";
     }
 }
 ?>
@@ -78,26 +81,26 @@ img {
                     <img src="images/1.jpg" class="img-fluid" alt="">
                 </div>
                 <div class="col-lg-7 px-5 pt-5">
-                    <a href="index.php" class="py-3"><img src="./assets/images/logo.jpg" style="height: 3rem;" alt=""></a>
+                    <a href="index.php" class="py-3"><img src="images/logo.jpg" style="height: 3rem;" alt=""></a> 
+                    <br><br>
                     <form action="" method="POST">
-                    <h4>Sign in</h4>
+                    <h4>Đăng nhập</h4>
                     <div class="form-row col-lg-7">    
-                    <input type="email" name="email"  placeholder="Email Address" class="form-control  my-3 p-3">
+                    <input type="email" name="email"  placeholder="Tên email" class="form-control  my-3 p-3">
                             <div class="error " style="color: red;">
                                 <span ><?php echo(isset($err['email']))?$err['email']:'' ?></span>
                             </div>
                     </div>
                     <div class="form-row col-lg-7">
-                            <input type="password" name="password" placeholder="Password" class="form-control  my-3 p-3">
+                            <input type="password" name="password" placeholder="Mật khẩu" class="form-control  my-3 p-3">
                             <div class="error " style="color: red;">
                                 <span ><?php echo(isset($err['password']))?$err['password']:'' ?></span>
                             </div>
                     </div>
                     <div class="form-row col-lg-7">
-                            <input type="submit" name="login-btn" class="btn btn-primary mt-3 mb-5 " value="Login">
+                            <input type="submit" name="login-btn" class="btn btn-primary mt-3 mb-5 " value="Đăng nhập">
                     </div>
-                    <a href="">Forgot password?</a>
-                    <p> If you don't have an account? <a href="register.php">Register here</a> <br><a href="index.php">Back home page</a></p>
+                    <p>Bạn chưa có tài khoản? <a href="register.php">Đăng ký</a> <br><a href="index.php">Trở về trang trủ</a></p>
                     </form>
                 </div>
             </div>

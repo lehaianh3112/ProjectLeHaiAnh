@@ -67,13 +67,13 @@ if (isset($_GET['edit'])) {
                 </div>
                          <div class="card mb-3 md-sm-0 mb-xl-3">
                              <div class="card-body">
-                                 <h2 class="h4 card-title text-primary">Chuyên mục</h2>
-                                 <ul class="list-noStyle mb-0">
-                                     <li><a href="#">CSE Forum</a></li>
-                                     <li><a href="#">Tin tức-Thông báo</a></li>
-                                     <li><a href="#">Tư vấn tuyển sinh</a></li>
-                                     <li><a href="#">Đào tạo-Hướng nghiệp</a></li>
-                                 </ul>
+                                 <h2 class="h4 card-title text-danger">Chuyên mục</h2>
+                                 <ul class="list-group list-group-flush mb-0">
+                            <li class="list-group-item"><a href="forum.php">CSE Forum</a>
+                                     <li class="list-group-item"><a href="index.php">Tin tức-Thông báo</a></li>
+                                     <li class="list-group-item"><a href="tuvan.php">Tư vấn tuyển sinh</a></li>
+                                     <li class="list-group-item"><a href="daotao.php">Đào tạo-Hướng nghiệp</a></li>
+                            </ul>
                              </div>           
                              </div>
                              <p><h3 class="bg-dark text-white" style="border-radius: 0.2rem;font-size:large;">Chào mừng đến với CSE.TLU, nơi bạn có thể đặt câu hỏi hoặc trả lời câu hỏi về những thắc mắc của bạn tất cả về khoa CNTT cũng như về trường Đại học Thủy Lợi</h3></p>
