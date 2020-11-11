@@ -118,7 +118,7 @@ img {
                             <input type="submit"  name="register-in" value="Đăng ký" class="btn btn-primary mt-2 mb-4 ">      
                     </div>
                     </form>
-                    <p class="col-lg-7 ">Or<a href="login.php">Đăng nhập</a></p>
+                    <p class="col-lg-7 ">Hoặc<a href="login.php">&nbsp; Đăng nhập</a></p>
                     <p><a class="col-md-6" href="index.php">Trở về trang trủ</a></p>
                 </div>
             </div>

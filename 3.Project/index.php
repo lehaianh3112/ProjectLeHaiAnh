@@ -84,8 +84,8 @@
         <h1 class="text-dark pt-4">Khoa Công Nghệ Thông Tin </h1>
         <div class="border-top border-primary w-25 mx-auto my-3">
             <br><form class="form-inline">
-    <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-    <button class="btn btn-outline-primary my-2 my-sm-0" type="submit">Tìm kiếm</button>
+    <input class="form-control mr-sm-2" type="search" placeholder="Search" id="txtSearch" aria-label="Search">
+    <button class="btn btn-outline-primary my-2 my-sm-0" type="button" name="btnShowtopics" id="btnShowtopics">Tìm kiếm</button>
   </form></div>
     </div>
     <div class="container">

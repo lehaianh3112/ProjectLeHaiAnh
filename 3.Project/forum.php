@@ -1,5 +1,6 @@
 <?php  include('includes/header.php');
 include("server.php");
+
 ?>
 <!doctype html>
 <html lang="en">
@@ -35,7 +36,16 @@ include("server.php");
                     <?php while ($row=mysqli_fetch_array($results)) { ?>
                          <tr>
                     <td><?php echo $row['title']?></td>
-                    <td><?php echo $row['question']?>&nbsp; 
+                    <td>
+                    <?php echo $row['question']?>&nbsp;<br>
+                    <?php 
+                    $result=mysqli_query($conn,"SELECT * FROM likes WHERE user_id=1 AND cauhoi_id=".$row['id']."");
+                    if (mysqli_num_rows($result)==1) { ?>
+                        <span ><a href="" class="unlike" id=" <?php echo $row['id'];?> "><i class="far fa-thumbs-down"></i></a></span>
+                 <?php   }else{ ?> 
+                    <span ><a href=""class="like"  id=" <?php echo $row['id'];?> "><i class="far fa-thumbs-up"></i></a></span>
+                 <?php } ?>                     
+                    
                      <div class="voting">
                         <button id="likebtn"><i class="fa fa-thumbs-up"></i></button> 
                         <input  type="number" id="input1" value="0" name="">
@@ -44,7 +54,7 @@ include("server.php");
                     </div>
                 </td>
                     <td>
-                        <a   href="edit.php?edit=<?php echo $row['id'];?>" class="text-success"><i class="fas fa-edit"></i></a>&nbsp;
+                    <a   href="edit.php?edit=<?php echo $row['id'];?>" class="text-success"><i class="fas fa-edit"></i></a>&nbsp;
                     <a href="xem.php?xem=<?php echo$row['id'];?>" class="text-dark"><i class="far fa-eye"></i></a>&nbsp;
                     <a  href="forum.php?del=<?php echo$row['id'];?>" class="text-danger mr-2" onclick="return confirm('Bạn có muốn xóa câu hỏi này?');" title="Delete"><i class="fas fa-trash"></i></a>
                        </td>
@@ -119,8 +129,6 @@ include("server.php");
     <script src="https://code.jquery.com/jquery-3.5.1.min.js"integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0="crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-    <script src="js/like.js"></script>
-
-   
+    <script src="like.js"></script>
 </body>
 </html> 

@@ -38,6 +38,24 @@ if (isset($_GET['de'])) {
      header('location:xem.php');
 }
 
+if (isset($_POST['liked'])) {
+    $cauhoi_id=$_POST['cauhoi_id'];
+    $result=mysqli_query($conn,"SELECT*FROM cauhoi WHERE cauhoi_id=$cauhoi_id");
+    $row=mysqli_fetch_array($result);
+    $a=$row['likes'];
+    mysqli_query($conn,"UPDATE cauhoi SET likes=$a+1 WHERE id=$cauhoi_id");
+    mysqli_query($conn,"INSERT INTO likes(user_id,cauhoi_id) VALUES(1,$cauhoi_id)");
+    exit();
+}
+if (isset($_POST['unliked'])) {
+    $cauhoi_id=$_POST['cauhoi_id'];
+    $result=mysqli_query($conn,"SELECT*FROM cauhoi WHERE cauhoi_id=$cauhoi_id");
+    $row=mysqli_fetch_array($result);
+    $a=$row['likes'];
+    mysqli_query($conn,"DELETE FROM likes WHERE id=$cauhoi_id AND user_id=1");
+    mysqli_query($conn,"UPDATE cauhoi SET likes=$a-1 WHERE id=$cauhoi_id");
+    exit();
+}
 
 if (isset($_GET['del'])) {
     $id=$_GET['del'];
