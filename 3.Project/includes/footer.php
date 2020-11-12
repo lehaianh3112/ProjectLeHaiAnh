@@ -21,7 +21,7 @@
                         <a class="dark-grey-text" style="color: white;" href="daotaosau.php">Đào tạo sau đại học</a>
                     </p>
                     <p>
-                        <a class="dark-grey-text" style="color: white;" href="dinhhuong.php">Định hướng nghành nghề</a>
+                        <a class="dark-grey-text" style="color: white;" href="dinhhuong.php">Định hướng ngành nghề</a>
                     </p>
                 </div>
                 <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">

@@ -1,0 +1,9 @@
+.image img {
+    height: 380px;
+    width: 80%;
+}
+
+.image {
+    background-color: white;
+    margin-top: 20px;
+}

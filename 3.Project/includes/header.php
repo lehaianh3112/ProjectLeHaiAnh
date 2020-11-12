@@ -26,7 +26,7 @@ $user=(isset($_SESSION['user']))? $_SESSION['user']: [];
                         <a class="nav-link active" href="index.php">Trang trủ <span class="sr-only">(current)</span></a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Giới thiệu</a>
+                        <a class="nav-link" href="gioithieu.php">Giới thiệu</a>
                     </li>
                     <?php if(isset($user['email'])){?>
                     <li class="nav-item">
@@ -37,7 +37,7 @@ $user=(isset($_SESSION['user']))? $_SESSION['user']: [];
                         <?php } ?>
 
                     <li class="nav-item">
-                        <a class="nav-link" href="#">
+                        <a class="nav-link" href="giangvien.php">
                             Giảng viên</a>
                     </li>
                     <?php if(isset($user['email'])){?>
