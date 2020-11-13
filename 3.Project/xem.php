@@ -66,10 +66,7 @@ include("server.php");
            </div>  
       </div>  
  </div>  
-
-
-
-                
+            
            
             </div>
            

@@ -10,6 +10,8 @@ dislikebtn.addEventListener('click', () => {
     input2.value = parseInt(input2.value) + 1;
     input2.style.color = "#blue";
 })
+
+
 $(document).ready(function() {
     $('.like').click(function() {
         var cauhoi_id = $(this).attr('id');
