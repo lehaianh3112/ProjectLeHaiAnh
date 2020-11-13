@@ -19,7 +19,6 @@ if (isset($_GET['edit'])) {
           echo'lỗi';
       }
     }
-
 }
 ?>
 <!doctype html>
