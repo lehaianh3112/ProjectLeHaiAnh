@@ -1,2 +1,2 @@
 # LeHaiAnh
-Nơi lưu trữ bài tập về nhà ,bài tập thực hành .Dự án cuối kỳ 
+Nơi lưu trữ dự án bài tập lớn.
